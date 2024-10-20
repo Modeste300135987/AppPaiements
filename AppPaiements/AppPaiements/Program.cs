@@ -20,5 +20,21 @@ internal class Program
         paiementPaypal1.AfficherDetails();
         paiementPaypal2.AfficherDetails();
 
+
+
+
+        // Création de l'utilisateur
+        Utilisateur utilisateur = new Utilisateur("Modeste Ewinsou");
+
+        // paiements à l'utilisateur
+        utilisateur.AjouterPaiement(paiement1);
+        utilisateur.AjouterPaiement(paiement2);
+        utilisateur.AjouterPaiement(paiement3);
+        utilisateur.AjouterPaiement(paiementPaypal1);
+        utilisateur.AjouterPaiement(paiementPaypal2);
+
+        // Affichage info utilisateur et paiements
+        utilisateur.AfficherInfos();
+
     }
 }
