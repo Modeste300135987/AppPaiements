@@ -13,5 +13,12 @@ internal class Program
         paiement2.AfficherDetails();
         paiement3.AfficherDetails();
 
+
+        Paypal paiementPaypal1 = new Paypal(166.00, "Achat en ligne", "Jennifer@exemple.ca");
+        Paypal paiementPaypal2 = new Paypal(438.00, "Achat en ligne", "Wendy@exemple.ca");
+
+        paiementPaypal1.AfficherDetails();
+        paiementPaypal2.AfficherDetails();
+
     }
 }
